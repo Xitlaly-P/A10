@@ -29,5 +29,6 @@ function checkCookie() {
         if (user !== "" && user !== null) {
             setCookie("username", user, 30);
         }
+        document.getElementById("welcome").innerHTML = "Welcome " + user + "!";
     }
 }
